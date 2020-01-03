@@ -59,6 +59,16 @@ export default class Deck extends Component {
           Get Card!
         </button>
         <div className="Deck-cardarea">{cards}</div>
+        <footer className="footer">
+          icon by{" "}
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://icons8.com"
+          >
+            Icons8
+          </a>
+        </footer>
       </div>
     );
   }

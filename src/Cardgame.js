@@ -22,13 +22,9 @@ export default class Cardgame extends Component {
     axios
       .get("https://deckofcardsapi.com/api/deck/bjhgaga5umgt/draw/?count=1")
       .then(Response => {
-        let url = Response.data.cards[0].image;
-
         this.setState({
           cards: [...this.state.cards, Response]
         });
-
-        console.log(this.state.cards);
       });
   }
 
